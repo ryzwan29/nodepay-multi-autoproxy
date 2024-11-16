@@ -1,7 +1,6 @@
 # Nodepay Auto Farming
 Feature:
 - Quick installation with script
-- Can running with proxy or Without proxy
 - Can mining multi account
 - Automatically remove inactive proxies
 
@@ -23,15 +22,17 @@ localStorage.getItem('np_token')
 ```
 source <(curl -s https://raw.githubusercontent.com/ryzwan29/nodepay-multi-autoproxy/main/quick-installation.sh)
 ```
+- Put your ```np_token``` to token_list.txt file
+- Put your ```proxy``` to local_proxies.txt file
 
 #### Run command
-✅ If you're using a proxy
+If you're using 1 account
 ```
-python3 run_proxy.py
+python3 run_autoproxy.py
 ```
-⚠️ If you're not using a proxy
+If you're using more than 1 account
 ```
-python3 noproxy.py
+python3 run_autoproxy_multi.py
 ```
 
 # Format Proxy
